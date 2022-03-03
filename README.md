@@ -19,11 +19,11 @@
 
 # The move which has highscore rather than other when has more move to win go through it.
 - In 3x3 like this:
- *  3 |  2 |  3
+ * --3--|--2--|--3--
  * ---+----+------+
- *  3 |  4 |  3
+ * --3--|--4--|--3--
  * ---+----+------+
- *  3 |  2 |  3
+ * --3--|--2--|--3--
 
 
 # Other rules
