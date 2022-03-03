@@ -22,7 +22,7 @@ else (3) Find a free coordinates with has highest score -> pick that coordinates
  *    3 |  2 |  3
  *  --+----+------+
  *    3 |  4 |  3
- *  --+-----+-----+
+ *  --+----+------+
  *    3 |  2 |  3
 
 
