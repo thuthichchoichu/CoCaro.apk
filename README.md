@@ -13,9 +13,9 @@
 
 # Pausedo code 
 - Details about my turn 
-if (1): Check my machine can Win -> pick that coordinates and end game
-else if (2) Check my user can Win if(user has chance win) -> block that coordinates 
-else (3) Find a free coordinates with has highest score -> pick that coordinates, 
+• if (1): Check my machine can Win -> pick that coordinates and end game
+• else if (2) Check my user can Win if(user has chance win) -> block that coordinates 
+• else (3) Find a free coordinates with has highest score -> pick that coordinates, 
 
 # The move which has highscore rather than other when has more move to win go through it.
 - In 3x3 like this:
