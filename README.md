@@ -1,7 +1,6 @@
-# Link to apk file: 
-# Description how I make this game work by my idea
+ Link to apk file: 
 
-# The core of my program is how to detect when user has chance to win
+# The core of my program is how to detect when user or my machine has chance to win
 1. Calculate all move of 3x3 board - 2d array. It has 8 move to win, a move to win include 3 coordinate, example 00 11 22.
  *   00 | 01 | 02
  *  ---+---+----=
@@ -9,7 +8,7 @@
  *  ---+---+----
  *   20 | 21 | 22
 
-2.Loop for all coordinates of user, searching in that, if any 2 coordinate in a a set of 3 move calculated in above, left move is where to block   
+2.Loop for all coordinates of user or my machine, searching in that, if any 2 coordinate in a a set of 3 move calculated in above, left move is where to block   
 
 
 # Pausedo code 
