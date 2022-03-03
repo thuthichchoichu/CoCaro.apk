@@ -18,14 +18,11 @@ Calculate all the moves of the 3x3 board (2D array). It has eight moves to win. 
 20 | 21 | 22
 
 2.Loop for all coordinates of the user or my machine, searching in that, if any 2 coordinates in a set of 3 moves calculated above, the left move is where to block.
-Pausedo code
-• Details about my turn
 
+#Pausedo code
 if (1): Check My Machine Can Win, then pick those coordinates and end the game.
 
-
 else if (2) Check my user can Win if(user has chance win) -> block that coordinates
-
 
 else (3) Find a free coordinates with has highest score -> pick that coordinates,
 
