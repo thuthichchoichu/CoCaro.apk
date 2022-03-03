@@ -5,7 +5,7 @@
  *   00 | 01 | 02
  *  ---+---+-----
  *   10 | 11 | 12
- *  ---+---+----
+ *  ---+---+-----
  *   20 | 21 | 22
 
 2.Loop for all coordinates of user or my machine, searching in that, if any 2 coordinate in a a set of 3 move calculated in above, left move is where to block   
@@ -19,11 +19,11 @@ else (3) Find a free coordinates with has highest score -> pick that coordinates
 
 # The move which has highscore rather than other when has more move to win go through it.
 - In 3x3 like this:
- *   3 | 2 | 3
- *  ---+---+---
- *   3 | 4 | 3
- *  ---+---+---
- *   3 | 2 | 3
+ *    3 |  2 |  3
+ *  --+----+------+
+ *    3 |  4 |  3
+ *  --+-----+-----+
+ *    3 |  2 |  3
 
 
 # Other rules
