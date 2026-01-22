@@ -29,7 +29,7 @@ The game starts with the empty state, and the center square is the best choice (
 	•	(0,0) (1,1) (2,2) \
 	•	(0,2) (1,1) (2,0)
 * Each corner square is part of 3 possible winning moves.
- For example, the corner (0,0) belongs to:
+ For example, the corner (0,0) belongs to:\
 	•	(0,0) (0,1) (0,2) \
 	•	(0,0) (1,0) (2,0) \
 	•	(0,0) (1,1) (2,2)
