@@ -35,5 +35,7 @@ The game starts with the empty state, and the center square is the best choice (
 So, by looking at the "winning pool", my program can find the best move it can take!
 
 
+<img width="260" height="548" alt="Screenshot 2026-01-22 at 13 00 18" src="https://github.com/user-attachments/assets/04e2c0f5-3042-442b-a4e1-a67b79703b60" />
 
+<img width="259" height="553" alt="Screenshot 2026-01-22 at 13 00 50" src="https://github.com/user-attachments/assets/741b6dcf-cadd-4d3e-bbbd-7fa23e08e864" />
 
