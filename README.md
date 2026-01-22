@@ -10,7 +10,7 @@ It isn't an undefeatable machine, but a heuristic approach to solve the well-def
 	•	3 rows\
 	•	3 columns\
 	•	2 diagonals\
-The point of my program isn't about endless if-else, but it just:
+## The point of my program isn't about endless if-else, but it just:
 * Apply the game rules above to decide if user win or lose.
 * Use for each loop to iterate through the squares, adding all winning moves, e.g. ((0,0), (1,1), (2,2)).
 * When a user pick a square, the winning move pool is **recalculate**.
