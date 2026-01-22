@@ -19,7 +19,7 @@ It isn't an undefeatable machine, but a heuristic approach to solve the well-def
 
 <img width="203" height="91" alt="Screenshot 2026-01-22 at 11 50 31" src="https://github.com/user-attachments/assets/c8577be0-ec6b-4372-b294-1f383771a685" />
 
-The game starts with the empty state, then the center square is the best choice (score = 4), followed by the four corner squares (score = 3). This is because:
+The game starts with the empty state, and the center square is the best choice (score = 4), followed by the four corner squares (score = 3). This is because:
 
 * The center square is part of 4 possible winning moves:\
 	•	(0,1) (1,1) (2,1) \
