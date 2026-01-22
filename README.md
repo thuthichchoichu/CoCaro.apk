@@ -1,53 +1,43 @@
-The core of my program is how to detect when a user or my machine has a chance to win.
+# A tick-tack-toe game
 
-Calculate all the moves of the 3x3 board (2D array). It has eight moves to win. A move to win includes 3 coordinates, for example: 00 11 22.
+Basically, my program is asking one question every turn: “Given the current board, where is the most dangerous or most valuable move to play next?”
 
+It isn't an undefeatable machine, but an approach to solve the well-defined problem:
+* Within a 3x3 squares, 2 players (called user & machine) take turns marking empty squares with 'X' or 'O', aiming to be the first to get three of their marks in a row.
+* Each winning move is just a set of 3 coordinates, for example:
+	•	Diagonal: [(0,0), (1,1), (2,2)]
+	•	Top row: [(0,0), (0,1), (0,2)]
+* There are exactly 8 ways to win:
+	•	3 rows
+	•	3 columns
+	•	2 diagonals
 
-00 | 01 | 02
+The point of my program isn't about endless if-else, but it just:
+* Apply the game rules above to decide if user win or lose.
+* Use for each loop to iterate through the squares, adding all winning moves, e.g. ((0,0), (1,1), (2,2)).
+* When a user pick a square, the winning move pool is **recalculate**.
+* Tell machine where to move next to block user from winning or choose the his best move.
+* My program views a "best" move when its score is highest. Consider this score map (winning pool):
 
+<img width="203" height="91" alt="Screenshot 2026-01-22 at 11 50 31" src="https://github.com/user-attachments/assets/c8577be0-ec6b-4372-b294-1f383771a685" />
 
----+---+----
+Initially, when no one move was picked, the center square is the best choice (score = 4), followed by the four corner squares (score = 3).
 
+This is because:
 
-10 | 11 | 12
+* The center square is part of 4 possible winning moves:\
+	•	(0,1) (1,1) (2,1) \
+	•	(1,0) (1,1) (1,2) \
+	•	(0,0) (1,1) (2,2) \
+	•	(0,2) (1,1) (2,0)
+* Each corner square is part of 3 possible winning moves.
+ For example, the corner (0,0) belongs to:
+	•	(0,0) (0,1) (0,2) \
+	•	(0,0) (1,0) (2,0) \
+	•	(0,0) (1,1) (2,2)
 
-
----+---+----
-
-
-20 | 21 | 22
-
-2.Loop for all coordinates of the user or my machine, searching in that, if any 2 coordinates in a set of 3 moves calculated above, the left move is where to block.
-
-#Pausedo code
-if (1): Check My Machine Can Win, then pick those coordinates and end the game.
-
-else if (2) Check my user can Win if(user has chance win) -> block that coordinates
-
-else (3) Find a free coordinates with has highest score -> pick that coordinates,
-
-When there are more moves to win when going through it, the move with the highest score takes precedence over the others.
-
-In 3x3 like this:
-
-
---3--|--2--|--3--
-
-
----+----+------+
-
-
---3--|--4--|--3--
-
-
----+----+------+
+So, by looking at the "winning pool", my program can find the best move it can take!
 
 
---3--|--2--|--3--
-
-Other rules
-
-Both of user and machine has moves to win togetherly equal when game begin - 8 move
 
 
-when user or machine pick a coordinate, all of their opponent move to win which has include this coordinate will be remove - to reduce amount step of calculation.
