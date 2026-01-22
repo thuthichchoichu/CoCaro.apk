@@ -1,13 +1,12 @@
 # A tick-tack-toe game
-
 Basically, my program is asking one question every turn: “Given the current board, where is the most dangerous or most valuable move to play next?”
 
-It isn't an undefeatable machine, but an approach to solve the well-defined problem:
+It isn't an undefeatable machine, but a heuristic approach to solve the well-defined problem:
 * Within a 3x3 squares, 2 players (called user & machine) take turns marking empty squares with 'X' or 'O', aiming to be the first to get three of their marks in a row.
-* Each winning move is just a set of 3 coordinates,  e.g.:
+* Each winning move is just a set of 3 coordinates,  e.g.\
 	•	Diagonal: [(0,0), (1,1), (2,2)]\
 	•	Top row: [(0,0), (0,1), (0,2)]
-* There are exactly 8 ways to win:
+* There are exactly 8 ways to win:\
 	•	3 rows\
 	•	3 columns\
 	•	2 diagonals\
@@ -15,7 +14,7 @@ The point of my program isn't about endless if-else, but it just:
 * Apply the game rules above to decide if user win or lose.
 * Use for each loop to iterate through the squares, adding all winning moves, e.g. ((0,0), (1,1), (2,2)).
 * When a user pick a square, the winning move pool is **recalculate**.
-* Tell machine where to move next to block user from winning or choose the his best move.
+* Tell machine where to move next to block user from winning or choose the its best move.
 * My program views a "best" move when its score is highest. Consider this score map (winning pool):
 
 <img width="203" height="91" alt="Screenshot 2026-01-22 at 11 50 31" src="https://github.com/user-attachments/assets/c8577be0-ec6b-4372-b294-1f383771a685" />
