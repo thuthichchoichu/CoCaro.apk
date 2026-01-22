@@ -1,5 +1,7 @@
 # A tick-tack-toe game
-Basically, my program is asking one question every turn: “Given the current board, where is the most dangerous or most valuable move to play next?”
+Basically, my program is asking one question every turn:
+
+```“Given the current board, where is the most dangerous or most valuable move to play next?”```
 
 It isn't an undefeatable machine, but a heuristic approach to solve the well-defined problem:
 * Within a 3x3 squares, 2 players (called user & machine) take turns marking empty squares with 'X' or 'O', aiming to be the first to get three of their marks in a row.
